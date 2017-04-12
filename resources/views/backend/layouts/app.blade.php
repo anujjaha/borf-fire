@@ -23,7 +23,7 @@
         @else
             {{ Html::style(mix('css/backend.css')) }}
         @endif
-
+        {{ Html::style('css/bootstrap-datetimepicker.min.css') }}
         @yield('after-styles')
 
         <!-- Html5 Shim and Respond.js IE8 support of Html5 elements and media queries -->
@@ -70,6 +70,8 @@
         <!-- JavaScripts -->
         @yield('before-scripts')
         {{ Html::script(mix('js/backend.js')) }}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+        {{ Html::script("js/bootstrap-datetimepicker.min.js") }}
         @yield('after-scripts')
     </body>
 </html>

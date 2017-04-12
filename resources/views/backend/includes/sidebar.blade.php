@@ -68,6 +68,13 @@
                 </ul>
             </li>
             @endauth
+            
+            <li class="{{ active_class(Active::checkUriPattern('admin/events/*')) }}">
+                <a href="{{ route('admin.events.index') }}">
+                    <i class="fa fa-calendar"></i>
+                    <span>Events</span>
+                </a>
+            </li>
 
             <li class="{{ active_class(Active::checkUriPattern('admin/log-viewer*')) }} treeview">
                 <a href="#">
